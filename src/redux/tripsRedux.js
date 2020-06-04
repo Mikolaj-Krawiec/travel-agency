@@ -30,8 +30,6 @@ export const getFilteredTrips = ({ trips, filters }) => {
   }
 
   // sort by cost descending (most expensive goes first)
-  console.log(+(output[0].cost.replace('$','').replace(',','')));
-
   output.sort((b , a) => +(a.cost.replace('$','').replace(',','')) - +(b.cost.replace('$','').replace(',','')));
 
   return output;
