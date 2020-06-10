@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
-class OrderOptionText extends React.Component {
+class OrderOptionDate extends React.Component {
   static propTypes = {
     setOptionValue: PropTypes.func,
   };
@@ -30,4 +30,4 @@ class OrderOptionText extends React.Component {
   }
 }
 
-export default OrderOptionText;
+export default OrderOptionDate;
