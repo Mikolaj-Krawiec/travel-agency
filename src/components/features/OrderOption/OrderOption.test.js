@@ -119,7 +119,7 @@ for(let type in optionTypes){
       }
       case 'checkboxes': {
         it('should run setOrderIcon function on change ', () => {
-          console.log('------------------',renderedSubcomponent.debug());
+          // console.log('------------------',renderedSubcomponent.debug());
           renderedSubcomponent.find({value:testValue}).simulate('change', {currentTarget: {checked: true} });
           expect(mockSetOrderOption).toBeCalledTimes(1);
           expect(mockSetOrderOption).toBeCalledWith({[mockProps.id]:[mockProps.currentValue, testValue] });

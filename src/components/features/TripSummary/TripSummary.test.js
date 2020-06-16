@@ -41,7 +41,7 @@ describe('<TripSummary>', () => {
     expect(component.find('.title').text()).toEqual(name);
     expect(component.find('span').at(0).text()).toEqual(days + ' days');
     expect(component.find('span').at(1).text()).toEqual('from '+ cost);
-    console.log(component.debug());
+    // console.log(component.debug());
   });
 
   it('should throw error without props id', () => {
